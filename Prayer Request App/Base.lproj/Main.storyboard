@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YX2-8D-tI9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SubmitPrayerViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="SubmitPrayerViewController" customClass="SubmitPrayerViewController" customModule="Prayer_Request_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx1-8h-POb">
+                                <rect key="frame" x="16" y="20" width="343" height="86"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" keyboardKey="YES" staticText="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="3Ds-Ep-ja9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3BX-Jg-BvU">
+                                <rect key="frame" x="16" y="114" width="343" height="408"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtO-Jm-m7H">
+                                <rect key="frame" x="94" y="531" width="186" height="79"/>
+                                <color key="backgroundColor" red="0.89987980769230758" green="0.89987980769230758" blue="0.89987980769230758" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="zhG-QL-EGK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitPrayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="53Y-10-gsB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wtO-Jm-m7H" firstAttribute="top" secondItem="3BX-Jg-BvU" secondAttribute="bottom" constant="9" id="1jm-5d-6Lk"/>
+                            <constraint firstItem="wtO-Jm-m7H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="78" id="3C9-lq-cvx"/>
+                            <constraint firstItem="dx1-8h-POb" firstAttribute="trailing" secondItem="3BX-Jg-BvU" secondAttribute="trailing" id="5AG-8r-foI"/>
+                            <constraint firstItem="dx1-8h-POb" firstAttribute="leading" secondItem="3BX-Jg-BvU" secondAttribute="leading" id="Gvu-lF-k0g"/>
+                            <constraint firstItem="dx1-8h-POb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HZX-Je-zgs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wtO-Jm-m7H" secondAttribute="bottom" constant="8" symbolic="YES" id="S3H-x1-noO"/>
+                            <constraint firstItem="dx1-8h-POb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XGW-1l-xf9"/>
+                            <constraint firstItem="dx1-8h-POb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YBz-bZ-Rss"/>
+                            <constraint firstItem="3BX-Jg-BvU" firstAttribute="centerX" secondItem="wtO-Jm-m7H" secondAttribute="centerX" id="aVH-Qk-hc0"/>
+                            <constraint firstItem="3BX-Jg-BvU" firstAttribute="top" secondItem="dx1-8h-POb" secondAttribute="bottom" constant="8" symbolic="YES" id="jZc-Nh-sSX"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Tw3-DE-yP7" appends="YES" id="cuc-Hx-cqF"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pray For Me" id="UQI-Zf-Pne"/>
+                    <connections>
+                        <outlet property="prayerTextView" destination="3BX-Jg-BvU" id="OBK-ux-sNe"/>
+                        <outlet property="quoteLabel" destination="dx1-8h-POb" id="nfy-ea-1xs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Tw3-DE-yP7">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="72P-3h-wuH"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1998" y="-1010"/>
+        </scene>
+        <!--PrayerTableViewController-->
+        <scene sceneID="Lyn-Ts-dvd">
+            <objects>
+                <viewController storyboardIdentifier="PrayerTableViewController" title="PrayerTableViewController" id="3Bq-Xh-pso" customClass="PrayerTableViewController" customModule="Prayer_Request_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AtB-S1-dod">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="UITableViewCell" id="IIh-nI-6zO">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IIh-nI-6zO" id="aYM-wX-awU">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="UF7-Iv-rWm" kind="show" identifier="showPrayerDetail" id="WbI-3u-4DR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="naG-Q1-Nwg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLx-oD-rhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3855.1999999999998" y="-65.217391304347828"/>
+        </scene>
+        <!--Prayer Detail View Controller-->
+        <scene sceneID="cpt-nM-Hjx">
+            <objects>
+                <viewController id="UF7-Iv-rWm" customClass="PrayerDetailViewController" customModule="Prayer_Request_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uuv-aj-Yty"/>
+                        <viewControllerLayoutGuide type="bottom" id="TSN-Qq-2PL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RTO-g0-UwT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFq-ND-WCv">
+                                <rect key="frame" x="16" y="101" width="343" height="281"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gg8-Lc-0kh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="sDv-FJ-KjL"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prayed for by: *****   People" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEO-96-5pz">
+                                <rect key="frame" x="59" y="390" width="257" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="4x2-Fj-nRK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TSN-Qq-2PL" firstAttribute="top" secondItem="xEO-96-5pz" secondAttribute="bottom" constant="165" id="3LF-g2-EVC"/>
+                            <constraint firstItem="xEO-96-5pz" firstAttribute="top" secondItem="dFq-ND-WCv" secondAttribute="bottom" constant="8" symbolic="YES" id="3Yv-WV-5w5"/>
+                            <constraint firstItem="dFq-ND-WCv" firstAttribute="leading" secondItem="RTO-g0-UwT" secondAttribute="leadingMargin" id="DBO-qn-Rd4"/>
+                            <constraint firstItem="dFq-ND-WCv" firstAttribute="centerX" secondItem="xEO-96-5pz" secondAttribute="centerX" id="Epx-80-Kkr"/>
+                            <constraint firstItem="xEO-96-5pz" firstAttribute="leading" secondItem="RTO-g0-UwT" secondAttribute="leadingMargin" constant="43" id="Ju4-fI-gyP"/>
+                            <constraint firstItem="dFq-ND-WCv" firstAttribute="trailing" secondItem="RTO-g0-UwT" secondAttribute="trailingMargin" id="YoT-83-ofc"/>
+                            <constraint firstItem="dFq-ND-WCv" firstAttribute="top" secondItem="Uuv-aj-Yty" secondAttribute="bottom" constant="37" id="h3A-KX-fKd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gCG-vh-0M9">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="zvJ-wk-Dpy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="prayerCountDetail" destination="xEO-96-5pz" id="3Xh-jw-tdv"/>
+                        <outlet property="prayerDetailLabel" destination="dFq-ND-WCv" id="1b6-qV-aK1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxn-HI-DNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4764" y="-65.217391304347828"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EYQ-x0-9iu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YX2-8D-tI9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JNR-1Y-MFl">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qXb-jy-3H6"/>
+                        <segue destination="3c1-y5-iiJ" kind="relationship" relationship="viewControllers" id="JOi-PN-hxW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwL-xW-jHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-641"/>
+        </scene>
+        <!--My Prayers-->
+        <scene sceneID="NJo-Pl-SKL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3c1-y5-iiJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Prayers" id="y22-Px-211"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fg7-Bw-zc9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Bq-Xh-pso" kind="relationship" relationship="rootViewController" id="5Wm-sy-e9g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5lv-ap-PIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="-65.217391304347828"/>
+        </scene>
+    </scenes>
+</document>
